@@ -1,0 +1,9 @@
+# Copy this file to signing.properties for local release builds.
+# The real signing.properties and *.jks files are ignored by git.
+#
+# Demo release keystore location in the PandaGenie workspace:
+# E:/ProjectAI/PandaGenie/Keystore/sdk_demo_provider/pandagenie-sdk-demo-provider.jks
+storeFile=E:/ProjectAI/PandaGenie/Keystore/sdk_demo_provider/pandagenie-sdk-demo-provider.jks
+storePassword=change-me
+keyAlias=demo-provider
+keyPassword=change-me

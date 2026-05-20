@@ -25,7 +25,7 @@ public class DemoCapabilityService extends PandaGenieCapabilityService {
                 .capability("demo.echo", "回显文本", "返回调用方传入的文本，用于验证 Service 能力调用。", "query", "low", arr("service"), schema("text"))
                 .capability("demo.open_activity", "打开演示页面", "打开演示应用页面，并显示调用方传入的标题和内容。", "open_ui", "low", arr("open_ui"), schema("title", "message", "source"))
                 .capability("demo.open_detail_page", "打开详情页面", "打开演示应用的详情页面，并根据参数展示指定内容。", "open_ui", "low", arr("open_ui"), schema("title", "message", "detailId"))
-                .capability("demo.provider_rows", "读取 Provider 列表", "读取演示应用导出的 ContentProvider 数据。", "provider", "medium", arr("data_read"), schema())
+                .capability("demo.provider_rows", "读取 Provider 数据", "读取演示应用导出的 ContentProvider 数据列表。", "provider", "medium", arr("data_read"), schema())
                 .capability("demo.provider_search", "搜索 Provider 数据", "按关键字搜索 ContentProvider 中的演示数据。", "provider", "medium", arr("data_read"), schema("keyword"))
                 .capability("demo.save_note", "保存本地便签", "将文本保存到演示应用本地存储，用于验证写入类能力。", "mutation", "medium", arr("data_write"), schema("note"))
                 .capability("demo.read_note", "读取本地便签", "读取上一次保存到演示应用本地存储的便签。", "query", "low", arr("data_read"), schema())
